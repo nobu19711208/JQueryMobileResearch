@@ -1,0 +1,48 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create JQuery Mobile  User Interface</title>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">    
+      <link rel="stylesheet" href="./css/normalize.css"/>
+      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css"/>
+      <link rel="stylesheet" href="./css/jqmIconPack/jqm-icon-pack-fa.css"/>
+      <style>
+         html * { 
+             border: solid black 1px;
+         } 
+         
+      </style>    
+      <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+      <script>
+        $(document).on("mobileinit", function(){
+        });
+            
+        $(document).ready(function() {
+            var ui=$('<input>',{min:1,max:100,value:50});
+            $('#container01').append(ui);
+            ui.slider();
+        });
+            
+        $(document).ready(function() {
+            var ui=$('<a>ボタン</a>',{});
+            $('#container02').append(ui);
+            ui.button();
+        })
+      </script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <script src="./js/jqmStyle.js"></script>
+    </head>
+    <body >
+    <div id="index" data-role="page">
+      <div data-role="content">
+        <div id="container01"></div>　          
+        <div id="container02"></div>　          
+　　　</div>　          
+  　</div>　          
+    </body>
+</html>
